@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page Not Found - 404 </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="page-not-found">
+        <div class="header">
+            <div class="logo">
+                <img src="images/logo.png" alt="">
+            </div>
+            <div class="menu">
+                <div class="sign-in">Sign In</div>
+                <div class="sign-up">Sign Up</div>
+            </div>
+        </div>
+
+        <div class="container">
+            <h1>DỪNG LẠI ...!</h1>
+            <p class="desc_1">Trang bạn vừa truy cập không tồn tại</p>
+            <p class="desc_2"> Có thể trang này đã bị xóa bởi admin hoặc hệ thống
+                đã bị lỗi ,vui lòng quay lại sau </p>
+            <button>Home Page</button>
+            <div class="image">
+                <img src="images/image.png" alt="">
+            </div>
+            <div class="redirect"></div>
+
+        </div>
+    </div>
+
+    <script>
+        // viết code js tại đây
+        // đếm ngược thời gian với đệ quy 
+        var second = 10; // thời gian đếm ngược 
+        var url = "https://www.facebook.com/" // url trang chủ, mình không code trang chủ nên mình dùng url tạm nhé
+
+        function countdown(time) {
+            if (time > 0) {
+                setTimeout(function () {
+                    let redirect = document.querySelector(".redirect")
+                    redirect.textContent = `Về trang chủ sau ${time} giây`
+                    return countdown(time - 1)
+                }, 1000)
+            }
+            else {
+                redirect(url)
+            }
+        }
+        function redirect(url) {
+            window.location = url
+        }
+
+        // call countdown function 
+        countdown(second)
+    </script>
+</body>
+
+</html>

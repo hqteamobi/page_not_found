@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;1,200;1,400;1,500&display=swap');
+
+
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+}
+
+.page-not-found {
+    width: 100%;
+    height: 100%;
+    background:#282b2a;
+    padding:0px 32.5px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding-top:32px;
+    align-items: center;
+}
+
+.menu {
+    display: flex;
+}
+.menu div {
+    margin-left:20px;
+    color:#fff;
+    font-weight: bold;
+}
+
+.container {
+    width: 700px;
+    height: 400px;
+    border-radius: 20px;
+    background:#fff;
+    margin:0px auto;   
+    padding-left:75px;
+    position:relative;
+    margin-top:60px;
+}
+
+
+.container h1 {
+    padding-top:45px;
+    font-size:24px;
+    color:#808996;
+}
+
+.container p.desc_1 {
+    color:#a5a5a5;
+}
+
+.container p.desc_2 {
+    color:#747474;
+}
+
+.container button {
+    width: 188px;
+    height: 40px;
+    left:78px;
+    top:200px;
+    background:#483b3b;
+    margin-top:42px;
+    color:#fff;
+    border:none;
+    outline:none;
+}
+
+.container .image {
+    position:absolute;
+    bottom:0;
+    right:0;
+}
+
+
+.container .redirect {
+    margin-top:95px;
+    color:#483b3b;
+}
